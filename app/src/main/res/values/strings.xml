@@ -15,4 +15,8 @@
     <string name="entrar">Entrar</string>
     <string name="cadastra_se">cadastra-se</string>
     <string name="n_o_tenho_uma_conta">não tenho uma conta</string>
+    <string name="nome">nome</string>
+    <string name="nomee">Nome</string>
+    <string name="salvar">Salvar</string>
+    <string name="cadastrar">Cadastrar</string>
 </resources>

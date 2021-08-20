@@ -1,9 +1,9 @@
-package com.example.tasks
+package com.example.tasks.view
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
-import androidx.lifecycle.ViewModelProvider
+import com.example.tasks.R
 
 class LoginActivity : AppCompatActivity(), View.OnClickListener {
 
