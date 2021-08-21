@@ -24,4 +24,8 @@
     <string name="completo">Completo</string>
     <string name="clique_para_selecionar_a_data">Clique para selecionar a data</string>
     <string name="adicionar_tarefa">Adicionar Tarefa</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
 </resources>
