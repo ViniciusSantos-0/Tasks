@@ -15,7 +15,7 @@ import com.example.tasks.R
 import com.example.tasks.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
-
+        var name: String = null
     private lateinit var appBarConfiguration: AppBarConfiguration
     private lateinit var binding: ActivityMainBinding
 
