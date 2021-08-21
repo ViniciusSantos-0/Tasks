@@ -28,4 +28,7 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="dummy_button">Dummy Button</string>
     <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="descri_o">Descrição</string>
+    <string name="prioridade">Prioridade</string>
+    <string name="data_limite">Data Limite</string>
 </resources>
