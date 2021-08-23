@@ -14,6 +14,7 @@ import com.example.tasks.R
 import com.example.tasks.service.constants.TaskConstants
 import com.example.tasks.service.listener.TaskListener
 import com.example.tasks.view.adpter.TaskAdapter
+import com.example.tasks.viewmodel.AllTasksViewModel
 
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
 private const val ARG_PARAM1 = "param1"
@@ -25,7 +26,7 @@ private const val ARG_PARAM2 = "param2"
  * create an instance of this fragment.
  */
 class AllTasksFragment : Fragment() {
-    private lateinit var mViewModel: AllTasksFragment
+    private lateinit var mViewModel: AllTasksViewModel
     private lateinit var mListener: TaskListener
     private val mAdapter = TaskAdapter()
 
@@ -33,7 +34,7 @@ class AllTasksFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        mViewModel = ViewModelProvider(this).get(AllTasksViewModel::clas.java)
+        mViewModel = ViewModelProvider(this).get(AllTasksViewModel::class.java)
         val root = inflater.inflate(R.layout.fragment_all_tasks, container, false)
 
         val recycler = root.findViewById<RecyclerView>(R.id.recycler_all_tasks)

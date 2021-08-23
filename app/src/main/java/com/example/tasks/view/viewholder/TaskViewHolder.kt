@@ -31,4 +31,3 @@ class TaskViewHolder(itemView: View, val listener: TaskListener) :
         }
     }
 }
-}

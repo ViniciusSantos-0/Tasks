@@ -6,6 +6,7 @@ import android.view.View
 import androidx.lifecycle.ViewModelProvider
 import com.example.tasks.R
 import com.example.tasks.viewmodel.RegisterViewModel
+import kotlinx.android.synthetic.main.activity_register.*
 import kotlinx.android.synthetic.main.activity_task_form.*
 
 class TaskFormActivity() : AppCompatActivity(), View.OnClickListener {
@@ -24,9 +25,11 @@ class TaskFormActivity() : AppCompatActivity(), View.OnClickListener {
     override fun onClick(v: View) {
        val id = v.id
         if(id == button_save.id){
-            var descricao = edit_descricao.text.toString()
+            var name = r_name.text.toString()
+            var email = r_mail.text.toString()
+            var password = r_password.text.toString()
 
-            mViewModel.create(descricao)
+            mViewModel.create(name,email,password)
         }
 
     }
