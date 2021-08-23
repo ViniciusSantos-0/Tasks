@@ -17,7 +17,7 @@
             android:icon="@drawable/ic_menu_slideshow"
             android:title="@string/experidas" />
         <item
-            android:id="@+id/nac_logout"
+            android:id="@+id/nav_logout"
             android:icon="@drawable/ic_lock"
             android:title="@string/sair"/>
     </group>
