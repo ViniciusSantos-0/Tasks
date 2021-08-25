@@ -8,7 +8,7 @@ class RetrofitClient private constructor() {
     companion object {
 
         private lateinit var retrofit: Retrofit
-        private val baseurl = "http://devmasterteam.com/cursoandroid/api"
+        private val baseurl = " http://devmasterteam.com/CursoAndroidAPI/"
 
         private fun getRetrofitIntance(): Retrofit {
             val httpClient = OkHttpClient.Builder()

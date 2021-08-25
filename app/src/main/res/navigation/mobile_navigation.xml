@@ -7,19 +7,19 @@
 
     <fragment
         android:id="@+id/nav_all_tasks"
-        android:name="com.example.tasks.ui.home.HomeFragment"
+        android:name="com.example.tasks.view.AllTasksFragment"
         android:label="All_tasks"
         tools:layout="@layout/fragment_all_tasks" />
 
     <fragment
         android:id="@+id/nav_next_tasks"
-        android:name="com.example.tasks.ui.gallery.GalleryFragment"
+        android:name="com.example.tasks.view.NextTasksFragment"
         android:label="Proximos 7 dias"
         tools:layout="@layout/fragment_next_tasks" />
 
     <fragment
         android:id="@+id/nav_expired"
-        android:name="com.example.tasks.ui.slideshow.SlideshowFragment"
+        android:name="com.example.tasks.view.ExpiredTasksFragment"
         android:label="Expiradas"
         tools:layout="@layout/fragment_expired_tasks" />
 </navigation>
