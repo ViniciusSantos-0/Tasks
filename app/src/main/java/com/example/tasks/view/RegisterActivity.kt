@@ -1,8 +1,10 @@
 package com.example.tasks.view
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import android.widget.Toast
 import androidx.lifecycle.ViewModelProvider
 import com.example.tasks.R
 import com.example.tasks.viewmodel.RegisterViewModel
@@ -31,8 +33,16 @@ class RegisterActivity : AppCompatActivity(), View.OnClickListener {
             mViewModel.create(name,email,password)
         }
     }
-    private  fun observe(){}
+    private  fun observe(){
+        mViewModel.create.observe(this,{
+            if(it.success()){
+                startActivity(Intent(this, MainActivity::class.java ))
+            }else{
+                Toast.makeText(this, it.failure(),Toast.LENGTH_SHORT).show()
+            }
+        })
+    }
     private fun listener(){
-        button_save.setOnClickListener(this)
+        button_save_register.setOnClickListener(this)
     }
 }
