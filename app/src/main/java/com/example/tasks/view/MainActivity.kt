@@ -20,6 +20,8 @@ import com.example.tasks.R
 import com.example.tasks.databinding.ActivityMainBinding
 import com.example.tasks.viewmodel.MainViewModel
 
+//token git: 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
+
 class MainActivity : AppCompatActivity() {
 
     private lateinit var appBarConfiguration: AppBarConfiguration
