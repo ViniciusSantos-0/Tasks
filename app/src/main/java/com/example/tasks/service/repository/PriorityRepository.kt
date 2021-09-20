@@ -32,7 +32,8 @@ class PriorityRepository(context: Context) {
             override fun onFailure(call: Call<List<PriorityModel>>, t: Throwable) {
 
             }
-
         })
     }
+
+    fun list () = mPriorityDatabase.list()
 }
